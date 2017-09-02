@@ -16,6 +16,7 @@ schema.OrderItem = new SimpleSchema({
     },
 
     product: {
+        type: String,
         regEx: SimpleSchema.RegEx.Id
     }
 });
@@ -24,6 +25,7 @@ schema.Order = new SimpleSchema({
     createdAt: Date,
     products: [schema.OrderItem],
     buyer: {
+        type: String,
         regEx: SimpleSchema.RegEx.Id
     }
 });
