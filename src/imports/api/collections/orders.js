@@ -15,12 +15,17 @@ schema.OrderItem = new SimpleSchema({
         // TODO: Think - do we want max?
     },
 
-    product: SimpleSchema.RegEx.Id
+    product: {
+        regEx: SimpleSchema.RegEx.Id
+    }
 });
 
 schema.Order = new SimpleSchema({
     createdAt: Date,
     products: [schema.OrderItem],
+    buyer: {
+        regEx: SimpleSchema.RegEx.Id
+    }
 });
 
 Orders.attachSchema(schema.Order);
