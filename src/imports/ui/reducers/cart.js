@@ -1,7 +1,7 @@
 /**
  * Created by itamar on 02/09/2017.
  */
-import { ADD_PRODUCT, REMOVE_PRODUCT } from '/imports/ui/actions/cart';
+import { ADD_PRODUCT, REMOVE_PRODUCT, CLEAR_PRODUCT, CLEAR_CART } from '/imports/ui/actions/cart';
 
 export default cart = (state = {}, action) => {
     switch (action.type) {
@@ -15,6 +15,11 @@ export default cart = (state = {}, action) => {
 
             return Object.assign({}, state,
                 {[action.product]: (state[action.product]) - 1});
+        case CLEAR_CART:
+            return {};
+        case CLEAR_PRODUCT:
+            return Object.assign({}, state,
+                {[action.product]: undefined});
         default:
             return state;
     }

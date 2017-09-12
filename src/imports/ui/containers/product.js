@@ -4,7 +4,7 @@ import Product from '/imports/ui/components/product.jsx';
 
 const mapStateToProps = (state, props) => ({
     product: props.product,
-    quantity: state.storefront.cart[props.product._id] || 0
+    quantity: state.cart[props.product._id] || 0
 });
 
 const mapDispatchToProps = (dispatch, props) => ({

@@ -5042,6 +5042,7 @@
         <item url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.19.4/npm/node_modules/core-js/library/shim.js" />
         <item url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.19.4/npm/node_modules/core-js/client/core.js" />
         <item url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.19.4/npm/node_modules/core-js/client/shim.min.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/kadira_dochead/1.5.0/npm/node_modules/load-script/index.js" />
         <item url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.19.4/npm/node_modules/core-js/client/core.min.js" />
         <item url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.19.4/npm/node_modules/core-js/client/library.js" />
         <item url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.19.4/npm/node_modules/core-js/client/shim.js" />
@@ -14336,6 +14337,7 @@
       <root url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.19.4/npm/node_modules/core-js/library/shim.js" />
       <root url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.19.4/npm/node_modules/core-js/client/core.js" />
       <root url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.19.4/npm/node_modules/core-js/client/shim.min.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/kadira_dochead/1.5.0/npm/node_modules/load-script/index.js" />
       <root url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.19.4/npm/node_modules/core-js/client/core.min.js" />
       <root url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.19.4/npm/node_modules/core-js/client/library.js" />
       <root url="file://$USER_HOME$/.meteor/packages/babel-compiler/6.19.4/npm/node_modules/core-js/client/shim.js" />

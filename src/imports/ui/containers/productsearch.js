@@ -6,7 +6,7 @@ import ProductSearch from '../components/productsearch.jsx';
 import { setProductQuery } from '../actions/storefront.js';
 
 const mapStateToProps = (state, props) => ({
-    query: state.storefront.productQuery
+    query: state.productQuery
 });
 
 const mapDispatchToProps = (dispatch, props) => ({
