@@ -4,8 +4,9 @@
 import { combineReducers } from 'redux';
 import { namespaced } from 'redux-subspace';
 import storefront from './storefront';
-import { STOREFRONT } from '../namespaces';
+import { STOREFRONT, DESK } from '../namespaces';
 
 export default app = combineReducers({
     storefront: namespaced(STOREFRONT)(storefront),
+    desk: namespaced(DESK)(storefront)
 });
