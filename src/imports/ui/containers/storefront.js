@@ -6,7 +6,7 @@ import Products from '/imports/api/collections/products';
 import { connect } from 'react-redux-meteor';
 import { subspaced } from 'react-redux-subspace';
 import Storefront from '../components/storefront.jsx';
-import { STOREFRONT, applyNamespace } from '../namespaces';
+import bindNamespace, { STOREFRONT } from '../namespaces';
 
 const mapTrackerToProps = (state, props) => {
     if (Meteor.subscribe('products').ready()) {

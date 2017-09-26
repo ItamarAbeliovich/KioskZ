@@ -4,6 +4,7 @@
 import { subspaced } from 'react-redux-subspace';
 
 export const
-    bindNamespace = namespace =>
-        subspaced(state => state[namespace], namespace);
     STOREFRONT = 'storefront';
+
+export default namespace =>
+    subspaced(state => state[namespace], namespace);
