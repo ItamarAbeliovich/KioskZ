@@ -4,4 +4,9 @@
 import React from 'react';
 
 export default ProductSearch = ({query, onChange}) =>
-    <input className="form-control product-search" value={query} onChange={onChange} />
+    <div className="input-group product-search">
+        <span className="input-group-addon">
+            <span className="glyphicon glyphicon-search" />
+        </span>
+        <input className="form-control" value={query} onChange={onChange} />
+    </div>

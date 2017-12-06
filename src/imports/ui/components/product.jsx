@@ -10,8 +10,8 @@ export default Product = ({product, quantity, onAddToCart, onRemoveFromCart}) =>
                 {product.name}
             </h4>
         </div>
-        <div className="panel-body">
-            <img className="img-responsive" src={product.imageLink} />
+        <div className="panel-body product-image-container">
+            <img className="img-responsive product-image" src={product.imageLink} />
         </div>
         <div className="panel-footer">
             {

@@ -9,17 +9,19 @@ export default cart = (state = {}, action) => {
             return Object.assign({}, state,
                 {[action.product]: 1 + (state[action.product] || 0)});
         case REMOVE_PRODUCT:
-            if (state[action.product] === 1)
-                return Object.assign({}, state,
-                    {[action.product]: undefined});
-
+            if (state[action.product] === 1) {
+                let newState = {...state};
+                delete newState[action.product];
+                return newState;
+            }
             return Object.assign({}, state,
                 {[action.product]: (state[action.product]) - 1});
         case CLEAR_CART:
             return {};
         case CLEAR_PRODUCT:
-            return Object.assign({}, state,
-                {[action.product]: undefined});
+            let newState = { ...state };
+            delete newState[action.product];
+            return newState;
         default:
             return state;
     }

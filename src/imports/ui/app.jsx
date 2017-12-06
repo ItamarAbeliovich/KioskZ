@@ -1,8 +1,10 @@
 import { Provider } from 'react-redux-meteor';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 import app from './reducers/app';
 import Storefront from './containers/storefront';
 import React from 'react';
+import Main from './layouts/main.jsx';
 
 let store = createStore(
     app,
@@ -12,5 +14,7 @@ let store = createStore(
 
 export default App = ({content}) =>
     <Provider store={store}>
-        {content}
+        <Main>
+            {content}
+        </Main>
     </Provider>
